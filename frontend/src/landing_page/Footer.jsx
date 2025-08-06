@@ -14,15 +14,26 @@ function Footer() {
           <p>&copy;2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
           <div className="social mt-5">
             <i className="fa-brands fa-x-twitter"></i>
-            <i className="fa-brands fa-square-facebook"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-linkedin"></i>
-
-            <hr />
-            <a href="">
-              <i className="fa-brands fa-youtube"></i>
+            <a
+              href="https://www.facebook.com/vipin.chaudhary.615307"
+              target="_blank"
+            >
+              <i className="fa-brands fa-square-facebook"></i>
             </a>
 
+            <a href="https://www.instagram.com/https_vpn_07/" target="_blank">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/vipin-chaudhary-b93783333/"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+
+            <hr />
+            <i className="fa-brands fa-youtube"></i>
             <i className="fa-brands fa-whatsapp"></i>
             <i className="fa-brands fa-telegram"></i>
           </div>
