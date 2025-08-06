@@ -2,39 +2,48 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="container-fluid support">
-      <div className="" id="supportWrapper">
-        <h4>Support Portal</h4>
-
-        <a href="" className="">
+    <div className="container-fluid support py-5">
+      <div className="d-flex justify-content-between align-items-center px-3 px-md-5 mb-4 w-100">
+        <h4 className="mb-0">Support Portal</h4>
+        <a href="#" className=" ms-3" style={{ whiteSpace: "nowrap" }}>
           Track tickets
         </a>
       </div>
 
-      <div className="row p-5 mx-5">
-        <div className="col-7">
-          <h4>Search for an answer or browse help topics to create a ticket</h4>
+      <div className="row px-3 px-md-5">
+        {/* Left column */}
+        <div className="col-md-7 col-12 mb-4">
+          <h4 className="mb-3">
+            Search for an answer or help topics to create a ticket
+          </h4>
+
           <input
             type="text"
-            className="mt-4 "
-            placeholder="Eg: how do i activate F&O, why is my ordergetting rejected..... "
+            className="form-control mb-4"
+            placeholder="Eg: how do I activate F&O, why is my order getting rejected..."
           />
-          <br />
-          <a href="" className="">
-            Track account opening
-          </a>
-          <a href="">Track segment activation </a>
-          <a href="">Intraday margins</a>
-          <a href=""> Kite user manual</a>
+
+          <div className="text-white ">
+            <a href="#">Track account opening</a>
+            <a href="#">Track segment activation</a>
+            <a href="#">Intraday margins</a>
+            <a href="#">Kite user manual</a>
+          </div>
         </div>
-        <div className="col-5">
-          <h4>Featured</h4>
-          <ol>
-            <li>
-              <a href="">Surveillance measure on scrips - June 2025</a>
+
+        {/* Right column */}
+        <div className="col-md-5 col-12">
+          <h4 className="mb-3">Featured</h4>
+          <ol className="ps-3">
+            <li className="mb-2">
+              <a href="#" className="text-decoration-none">
+                Surveillance measure on scrips - June 2025
+              </a>
             </li>
             <li>
-              <a href="">Latest Intraday leverages and Square-off </a>
+              <a href="#" className="text-decoration-none">
+                Latest Intraday leverages and Square-off
+              </a>
             </li>
           </ol>
         </div>
