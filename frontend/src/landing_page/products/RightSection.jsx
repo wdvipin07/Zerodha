@@ -33,7 +33,7 @@ function RightSection({
             </a>
           </div>
 
-          <div>
+          <div style={{ display: "flex", gap: "1rem" }}>
             <a href={googlePlay}>
               <img src="media/images/googlePlayBadge.svg" alt="" />{" "}
             </a>
