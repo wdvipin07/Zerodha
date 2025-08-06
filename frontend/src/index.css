@@ -1,0 +1,89 @@
+/* Navbar */
+.nav-link {
+  margin-left: 20px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: red !important;
+  font-size: 17px;
+}
+
+/* footer */
+.footer {
+  background-color: #fbfbfb;
+}
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(48, 45, 45);
+  margin-bottom: 12px;
+}
+.social i {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  color: #424242;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: rgb(69, 69, 255);
+}
+
+.universe img {
+  width: 12rem;
+}
+
+/* pricing */
+
+.ticket a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(78, 153, 223);
+  margin-bottom: 12px;
+}
+
+/* support */
+.support {
+  background-color: #387ed1;
+  color: white;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 2.5rem 0;
+}
+
+.support a {
+  color: white;
+  padding: 0.7rem;
+  display: inline-block;
+  font-size: large;
+}
+
+.support input {
+  padding: 16px 50px;
+  width: 90%;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+}
+
+/* Button Responsive */
+@media (max-width: 768px) {
+  .btn {
+    width: 80% !important; /* Full width on mobile */
+    font-size: 16px; /* Adjust font size if needed */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    width: 50% !important; /* Adjust button width on medium screens */
+    font-size: 18px; /* Adjust font size if needed */
+  }
+}

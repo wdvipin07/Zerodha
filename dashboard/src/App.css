@@ -1,0 +1,189 @@
+/* Modern Responsive Trading Dashboard CSS */
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Sidebar/Watchlist */
+.watchlist-container {
+  min-width: 260px;
+  max-width: 320px;
+  background: #fff;
+  border-right: 1px solid #e3e3e3;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 2rem 2.5vw;
+  min-width: 0;
+}
+
+.order-table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+.order-table th,
+.order-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+}
+.order-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #4184f3;
+}
+.order-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .watchlist-container {
+    max-width: 100vw;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 1rem 0.5rem;
+  }
+  .content {
+    padding: 1rem 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .watchlist-container {
+    padding: 0.5rem 0.2rem;
+  }
+  .content {
+    padding: 0.5rem 0.2rem;
+  }
+  .order-table table,
+  .order-table th,
+  .order-table td {
+    font-size: 0.92rem;
+    padding: 0.5rem 0.4rem;
+  }
+  .order-table table {
+    min-width: 400px;
+  }
+}
+
+/* Buttons */
+.btn,
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-blue,
+.buy {
+  background: #4184f3;
+  color: #fff;
+}
+.btn-blue:hover,
+.buy:hover {
+  background: #2563eb;
+}
+.btn-red,
+.sell {
+  background: #e53e3e;
+  color: #fff;
+}
+.btn-red:hover,
+.sell:hover {
+  background: #b91c1c;
+}
+.btn-grey {
+  background: #e3e3e3;
+  color: #333;
+}
+.btn-grey:hover {
+  background: #bdbdbd;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"] {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 0.5em 0.8em;
+  font-size: 1rem;
+  margin: 0.2em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: 2px solid #4184f3;
+  border-color: #4184f3;
+}
+
+/* Utility */
+.profit {
+  color: #16a34a;
+  font-weight: 600;
+}
+.loss {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+/* Card/Section */
+.row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.col {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 1.2rem 2rem;
+  min-width: 180px;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .col {
+    padding: 0.7rem 0.5rem;
+    min-width: unset;
+  }
+}
